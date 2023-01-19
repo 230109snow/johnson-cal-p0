@@ -42,7 +42,6 @@ export class ResortDetailComponent implements OnInit, OnDestroy{
 
         this.liftsOpen = data.data.lifts.stats.open;
         this.liftsTotal = Object.keys(data.data.lifts.status).length;
-        console.log(this.liftsTotal);
 
         this.conditions.base = data.data.conditions.base;
         this.conditions.season = data.data.conditions.season;

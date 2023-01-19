@@ -1,0 +1,21 @@
+<p>region-search works!</p>
+<form [formGroup]="form">
+  <label>Country: </label>
+  <select  id="countrySelect" (change)="searchByCountry($event.target)">
+    <option *ngFor="let country of countryList" [ngValue]="country">
+      {{country}}
+    </option>
+  </select>
+  <label>Region: </label>
+  <select id="regionSelect" (change) = "searchByRegion($event.target)">
+    <option *ngFor="let region of regionList" [ngValue]="region">
+      {{region}}
+    </option>
+  </select>
+</form>
+<div class="results">
+  <div *ngFor="let result of resultList">
+    <p>{{result.name}}</p>
+    <p>{{result.region}}, {{result.country}}</p>
+  </div>
+</div>
