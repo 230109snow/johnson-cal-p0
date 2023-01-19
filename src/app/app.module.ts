@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { ResortSearchComponent } from './resort-search/resort-search.component';
 import { ResortDetailComponent } from './resort-detail/resort-detail.component';
 import { RegionSearchComponent } from './region-search/region-search.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ResortSearchComponent,
     ResortDetailComponent,
-    RegionSearchComponent
+    RegionSearchComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
