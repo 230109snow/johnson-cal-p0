@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
+import { ThisReceiver } from '@angular/compiler';
 
 @Component({
   selector: 'app-region-search',
@@ -9,7 +11,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class RegionSearchComponent implements OnInit{
   constructor(
-    private http : HttpClient
+    private http : HttpClient,
+    private router : Router
   ){};
 
   country : string = "";
@@ -56,6 +59,13 @@ export class RegionSearchComponent implements OnInit{
         }
       })
       console.log(this.resultList);
+    }
+  }
+
+  navigateToDetail(target : any) {
+    let resort = target.id;
+    if (resort) {
+      this.router.navigate(['/resort', resort]);
     }
   }
 

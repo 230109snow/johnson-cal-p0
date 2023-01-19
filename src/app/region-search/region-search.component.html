@@ -12,8 +12,8 @@
     </option>
   </select>
 </form>
-<div class="results">
-  <div *ngFor="let result of resultList">
+<div class="results" (click)="navigateToDetail($event.target)">
+  <div *ngFor="let result of resultList" [id]="result.id">
     <p>{{result.name}}</p>
     <p>{{result.region}}, {{result.country}}</p>
   </div>
