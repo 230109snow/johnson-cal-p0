@@ -1,3 +1,4 @@
+<h2>Search</h2>
 <form [formGroup]="form">
   <label>Country: </label>
   <select  id="countrySelect" (change)="searchByCountry($event.target)">
@@ -13,7 +14,8 @@
   </select>
 </form>
 <div class="results" (click)="navigateToDetail($event.target)">
-  <div *ngFor="let result of resultList" [id]="result.id">
+  <h3>Results</h3>
+  <div class="resultCard" *ngFor="let result of resultList" [id]="result.id">
     <p>{{result.name}}</p>
     <p>{{result.region}}, {{result.country}}</p>
   </div>
