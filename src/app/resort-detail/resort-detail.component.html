@@ -1,35 +1,38 @@
+<div class="banner">
+  <h2>{{name}}</h2>
+  <h3 id="location">{{region | getRegionName}}, {{country | getCountryName}}</h3>
+</div>
 <div class="grid">
   <div class="col">
-    <h2>{{name}}</h2>
-    <h4>{{region | getRegionName}}, {{country | getCountryName}}</h4>
-    <div class="snow-report">
-      <h6>Snowfall</h6>
-      <ul>
-        <li>Base: {{conditions.base}}"</li>
-        <li>Season: {{conditions.season}}"</li>
-        <li>Last 24 hours: {{conditions.dayTotal}}"</li>
-        <li>Last 7 days: {{conditions.weekTotal}}"</li>
+    <div class="snow-report card">
+      <div class="card-header">Snow Report</div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Base: {{conditions.base}}"</li>
+        <li class="list-group-item">Season: {{conditions.season}}"</li>
+        <li class="list-group-item">Last 24 hours: {{conditions.dayTotal}}"</li>
+        <li class="list-group-item">Last 7 days: {{conditions.weekTotal}}"</li>
       </ul>
     </div>
   </div>
   <div class="col">
-    <div class="lifts">
-      <p>Lifts: {{liftsOpen}}/{{liftsTotal}}</p>
-      <div class="lift-list">
-        <div *ngFor="let lift of lifts">
-          {{lift.name}} : {{lift.status}}
-        </div>
-      </div>
+    <div class="lifts card">
+      <div class="card-header">Lifts: {{liftsOpen}}/{{liftsTotal}}</div>
+      <ul class="list-group list-group-flush" id="lift-list">
+        <li *ngFor="let lift of lifts" class="list-group-item {{lift.style}}">
+          {{lift.name}} : {{lift.status | uppercase}}
+        </li>
+      </ul>
     </div>
   </div>
   <div class="col">
-    <div class="twitter">
-      <p>Twitter: @{{twitterUser}}</p>
-    
-      <ngx-twitter-tweet *ngFor="let tweet of tweets; index as i"
-      [tweetID]="tweets[i].id_str"
-      [options]="{ size: 'small'}">
-      </ngx-twitter-tweet>
+    <div class="twitter card">
+      <div class="card-header">Twitter: @{{twitterUser}}</div>
+      <div class="card-body">
+        <ngx-twitter-tweet *ngFor="let tweet of tweets; index as i"
+        [tweetID]="tweets[i].id_str"
+        [options]="{ size: 'small'}">
+        </ngx-twitter-tweet>
+      </div>
     </div>
   </div>
 </div>

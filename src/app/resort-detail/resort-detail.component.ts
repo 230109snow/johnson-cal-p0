@@ -10,7 +10,8 @@ interface tweet {
 }
 interface lift {
   name: string;
-  status: string
+  status: string;
+  style: string;
 }
 
 @Component({
@@ -44,7 +45,7 @@ export class ResortDetailComponent implements OnInit, OnDestroy{
   ngOnInit() {
     this.sub = this.route.params.subscribe(params => {
       this.resort_id = params['id']; 
-      let url = 'assets/json/resort-info.json';
+      let url = 'assets/json/alta.json';
       // let url= `https://ski-resorts-and-conditions.p.rapidapi.com/v1/resort/${this.resort_id}`
       
       this.http.get(url, {
@@ -62,11 +63,18 @@ export class ResortDetailComponent implements OnInit, OnDestroy{
         this.liftsOpen = data.data.lifts.stats.open;
         this.liftsTotal = Object.keys(data.data.lifts.status).length;
         for (const lift in data.data.lifts.status) {
+          let liftStyle = ""
           let liftName : string = lift;
           let liftStatus : string = data.data.lifts.status[lift];
-          this.lifts.push({ name : liftName, status: liftStatus})
-        }
-        console.log(this.lifts)
+          if (liftStatus==="closed"){
+             liftStyle= "list-group-item-danger";
+          } else if (liftStatus==="open"){
+            liftStyle = "list-group-item-success"
+          } else {
+            liftStyle = "list-group-item-dark"
+          }
+          this.lifts.push({ name : liftName, status: liftStatus, style: liftStyle})
+        }        
         // Conditions
         if (data.data.conditions) {
           this.conditions.base = data.data.conditions.base;
