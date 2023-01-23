@@ -1,0 +1,204 @@
+{
+  "data": {
+      "slug": "alta",
+      "name": "Alta",
+      "country": "US",
+      "region": "UT",
+      "href": "https://www.alta.com/lift-terrain-status",
+      "units": "imperial",
+      "location": {
+          "latitude": 40.583828,
+          "longitude": -111.63726
+      },
+      "lifts": {
+          "status": {
+              "Sunnyside": "open",
+              "Collins": "open",
+              "Wildcat": "open",
+              "Sugarloaf": "open",
+              "Supreme": "open",
+              "Albion": "closed"
+          },
+          "stats": {
+              "open": 5,
+              "hold": 0,
+              "scheduled": 0,
+              "closed": 1,
+              "percentage": {
+                  "open": 83.3,
+                  "hold": 0,
+                  "scheduled": 0,
+                  "closed": 16.6
+              }
+          }
+      },
+      "twitter": {
+          "user": "AltaSkiArea",
+          "tweets": [
+              {
+                  "text": "Photo of the Day | 1.22.2023\n\nAlta locals, the Harrington family, soaking up some sparkly Alta Magic thanks to the new Sunnyside Six-Pack lift. \n\n📸: @Photo_John\n\nhttps://t.co/MRJ6yODizO https://t.co/sRvib8NOnU",
+                  "id_str": "1617322474324262916",
+                  "created_at": "Mon Jan 23 00:45:00 +0000 2023",
+                  "entities": {
+                      "hashtags": [],
+                      "symbols": [],
+                      "user_mentions": [
+                          {
+                              "screen_name": "Photo_John",
+                              "name": "Photo-John",
+                              "id": 14718870,
+                              "id_str": "14718870",
+                              "indices": [
+                                  149,
+                                  160
+                              ]
+                          }
+                      ],
+                      "urls": [
+                          {
+                              "url": "https://t.co/MRJ6yODizO",
+                              "expanded_url": "http://bit.ly/PhotoOfTheDayAlta",
+                              "display_url": "bit.ly/PhotoOfTheDayA…",
+                              "indices": [
+                                  162,
+                                  185
+                              ]
+                          }
+                      ],
+                      "media": [
+                          {
+                              "id": 1617322334087712800,
+                              "id_str": "1617322334087712769",
+                              "indices": [
+                                  186,
+                                  209
+                              ],
+                              "media_url": "http://pbs.twimg.com/media/FnHiGAqakAEaWnQ.jpg",
+                              "media_url_https": "https://pbs.twimg.com/media/FnHiGAqakAEaWnQ.jpg",
+                              "url": "https://t.co/sRvib8NOnU",
+                              "display_url": "pic.twitter.com/sRvib8NOnU",
+                              "expanded_url": "https://twitter.com/AltaSkiArea/status/1617322474324262916/photo/1",
+                              "type": "photo",
+                              "sizes": {
+                                  "thumb": {
+                                      "w": 150,
+                                      "h": 150,
+                                      "resize": "crop"
+                                  },
+                                  "small": {
+                                      "w": 680,
+                                      "h": 453,
+                                      "resize": "fit"
+                                  },
+                                  "medium": {
+                                      "w": 1200,
+                                      "h": 800,
+                                      "resize": "fit"
+                                  },
+                                  "large": {
+                                      "w": 2048,
+                                      "h": 1365,
+                                      "resize": "fit"
+                                  }
+                              }
+                          }
+                      ]
+                  },
+                  "extended_entities": {
+                      "media": [
+                          {
+                              "id": 1617322334087712800,
+                              "id_str": "1617322334087712769",
+                              "indices": [
+                                  186,
+                                  209
+                              ],
+                              "media_url": "http://pbs.twimg.com/media/FnHiGAqakAEaWnQ.jpg",
+                              "media_url_https": "https://pbs.twimg.com/media/FnHiGAqakAEaWnQ.jpg",
+                              "url": "https://t.co/sRvib8NOnU",
+                              "display_url": "pic.twitter.com/sRvib8NOnU",
+                              "expanded_url": "https://twitter.com/AltaSkiArea/status/1617322474324262916/photo/1",
+                              "type": "photo",
+                              "sizes": {
+                                  "thumb": {
+                                      "w": 150,
+                                      "h": 150,
+                                      "resize": "crop"
+                                  },
+                                  "small": {
+                                      "w": 680,
+                                      "h": 453,
+                                      "resize": "fit"
+                                  },
+                                  "medium": {
+                                      "w": 1200,
+                                      "h": 800,
+                                      "resize": "fit"
+                                  },
+                                  "large": {
+                                      "w": 2048,
+                                      "h": 1365,
+                                      "resize": "fit"
+                                  }
+                              }
+                          }
+                      ]
+                  }
+              },
+              {
+                  "text": "Enjoy a few Sunnyside laps with the @TheDailyPOW family 🙌 https://t.co/5Qz9lw0jpc",
+                  "id_str": "1617214055063916545",
+                  "created_at": "Sun Jan 22 17:34:11 +0000 2023",
+                  "entities": {
+                      "hashtags": [],
+                      "symbols": [],
+                      "user_mentions": [
+                          {
+                              "screen_name": "TheDailyPOW",
+                              "name": "The Daily POW",
+                              "id": 14298783,
+                              "id_str": "14298783",
+                              "indices": [
+                                  36,
+                                  48
+                              ]
+                          }
+                      ],
+                      "urls": [
+                          {
+                              "url": "https://t.co/5Qz9lw0jpc",
+                              "expanded_url": "https://twitter.com/TheDailyPOW/status/1617166678848344065",
+                              "display_url": "twitter.com/TheDailyPOW/st…",
+                              "indices": [
+                                  58,
+                                  81
+                              ]
+                          }
+                      ]
+                  }
+              },
+              {
+                  "text": "🙌 https://t.co/E0FSl6DzZF",
+                  "id_str": "1617201675521122307",
+                  "created_at": "Sun Jan 22 16:45:00 +0000 2023",
+                  "entities": {
+                      "hashtags": [],
+                      "symbols": [],
+                      "user_mentions": [],
+                      "urls": [
+                          {
+                              "url": "https://t.co/E0FSl6DzZF",
+                              "expanded_url": "https://twitter.com/ozskier/status/1616897841867423744",
+                              "display_url": "twitter.com/ozskier/status…",
+                              "indices": [
+                                  2,
+                                  25
+                              ]
+                          }
+                      ]
+                  }
+              }
+          ]
+      }
+  }
+}

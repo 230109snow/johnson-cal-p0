@@ -1,12 +1,16 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Router, ActivatedRoute, ParamMap } from '@angular/router';
-import { ThisReceiver } from '@angular/compiler';
+import { Router, ActivatedRoute } from '@angular/router';
+import { apiKey } from 'src/api-key';
 
 interface tweet {
   text: string;
   id_str: string;
   created_at: string;
+}
+interface lift {
+  name: string;
+  status: string
 }
 
 @Component({
@@ -27,7 +31,7 @@ export class ResortDetailComponent implements OnInit, OnDestroy{
   region : string = "";
   liftsOpen = 0;
   liftsTotal : number = 0;
-  lifts : any[] = [];
+  lifts : lift[] = [];
   conditions = {
     base : 0,
     season : 0,
@@ -40,9 +44,15 @@ export class ResortDetailComponent implements OnInit, OnDestroy{
   ngOnInit() {
     this.sub = this.route.params.subscribe(params => {
       this.resort_id = params['id']; 
-      let url = 'assets/json/resort-info.json'
+      let url = 'assets/json/resort-info.json';
+      // let url= `https://ski-resorts-and-conditions.p.rapidapi.com/v1/resort/${this.resort_id}`
       
-      this.http.get(url, {}).subscribe((data : any) => {
+      this.http.get(url, {
+        // headers: {
+        //   'X-RapidAPI-Key': apiKey,
+        //   'X-RapidAPI-Host': 'ski-resorts-and-conditions.p.rapidapi.com'
+        // }
+      }).subscribe((data : any) => {
         console.log(data);
 
         this.name = data.data.name;
@@ -51,11 +61,19 @@ export class ResortDetailComponent implements OnInit, OnDestroy{
         // Lifts
         this.liftsOpen = data.data.lifts.stats.open;
         this.liftsTotal = Object.keys(data.data.lifts.status).length;
+        for (const lift in data.data.lifts.status) {
+          let liftName : string = lift;
+          let liftStatus : string = data.data.lifts.status[lift];
+          this.lifts.push({ name : liftName, status: liftStatus})
+        }
+        console.log(this.lifts)
         // Conditions
-        this.conditions.base = data.data.conditions.base;
-        this.conditions.season = data.data.conditions.season;
-        this.conditions.dayTotal = data.data.conditions.twentyfour_hours;
-        this.conditions.weekTotal = data.data.conditions.seven_days;
+        if (data.data.conditions) {
+          this.conditions.base = data.data.conditions.base;
+          this.conditions.season = data.data.conditions.season;
+          this.conditions.dayTotal = data.data.conditions.twentyfour_hours;
+          this.conditions.weekTotal = data.data.conditions.seven_days;
+        }
         // Twitter
         this.twitterUser = data.data.twitter.user;
         for (let tweet of data.data.twitter.tweets) {
