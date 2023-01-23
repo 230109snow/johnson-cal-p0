@@ -1,6 +1,13 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
+import { ThisReceiver } from '@angular/compiler';
+
+interface tweet {
+  text: string;
+  id_str: string;
+  created_at: string;
+}
 
 @Component({
   selector: 'app-resort-detail',
@@ -12,21 +19,23 @@ export class ResortDetailComponent implements OnInit, OnDestroy{
     private route : ActivatedRoute,
     private http : HttpClient
   ) {}
-
   private sub : any;
-  resort_id : string = "";
 
+  resort_id : string = "";
   name : string = "";
   country : string = "";
   region : string = "";
   liftsOpen = 0;
-  liftsTotal : any = 0;
+  liftsTotal : number = 0;
+  lifts : any[] = [];
   conditions = {
     base : 0,
     season : 0,
     dayTotal : 0,
     weekTotal : 0
-  }
+  };
+  twitterUser : string = "";
+  tweets : tweet[] = [];
 
   ngOnInit() {
     this.sub = this.route.params.subscribe(params => {
@@ -39,16 +48,24 @@ export class ResortDetailComponent implements OnInit, OnDestroy{
         this.name = data.data.name;
         this.country = data.data.country;
         this.region = data.data.region;
-
+        // Lifts
         this.liftsOpen = data.data.lifts.stats.open;
         this.liftsTotal = Object.keys(data.data.lifts.status).length;
-
+        // Conditions
         this.conditions.base = data.data.conditions.base;
         this.conditions.season = data.data.conditions.season;
         this.conditions.dayTotal = data.data.conditions.twentyfour_hours;
         this.conditions.weekTotal = data.data.conditions.seven_days;
-
-      }) 
+        // Twitter
+        this.twitterUser = data.data.twitter.user;
+        for (let tweet of data.data.twitter.tweets) {
+          this.tweets.push({
+            text: tweet.text,
+            id_str: tweet.id_str,
+            created_at: tweet.created_at.substr(0,19)
+          })      
+        }
+      })
     });
   }
 

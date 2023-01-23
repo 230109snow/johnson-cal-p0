@@ -9,4 +9,14 @@
     <li>Last 7 days: {{conditions.weekTotal}}"</li>
   </ul>
 </div>
-<p>Lifts: {{liftsOpen}}/{{liftsTotal}}</p>
+<div class="lifts">
+  <p>Lifts: {{liftsOpen}}/{{liftsTotal}}</p>
+</div>
+<div class="twitter">
+  <p>Twitter: @{{twitterUser}}</p>
+
+  <ngx-twitter-tweet *ngFor="let tweet of tweets; index as i"
+  [tweetID]="tweets[i].id_str"
+  [options]="{ size: 'small', text: 'Tweet from Twitter' }">
+  </ngx-twitter-tweet>
+</div>
