@@ -8,11 +8,14 @@ import { HttpClient } from '@angular/common/http';
   templateUrl: './region-search.component.html',
   styleUrls: ['./region-search.component.css']
 })
+
 export class RegionSearchComponent implements OnInit{
   constructor(
     private http : HttpClient,
     private router : Router
   ){};
+
+
 
   country : string = "";
   region : string = "";

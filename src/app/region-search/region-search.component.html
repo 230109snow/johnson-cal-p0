@@ -17,6 +17,6 @@
   <h3>Results</h3>
   <div class="resultCard" *ngFor="let result of resultList" [id]="result.id">
     <p>{{result.name}}</p>
-    <p>{{result.region}}, {{result.country}}</p>
+    <p>{{result.region | getRegionName}}, {{result.country | getCountryName}}</p>
   </div>
 </div>

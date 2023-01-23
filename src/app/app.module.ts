@@ -9,6 +9,8 @@ import { ResortSearchComponent } from './resort-search/resort-search.component';
 import { ResortDetailComponent } from './resort-detail/resort-detail.component';
 import { RegionSearchComponent } from './region-search/region-search.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { GetRegionNamePipe } from './get-region-name.pipe';
+import { GetCountryNamePipe } from './get-country-name.pipe';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { NavbarComponent } from './navbar/navbar.component';
     ResortSearchComponent,
     ResortDetailComponent,
     RegionSearchComponent,
-    NavbarComponent
+    NavbarComponent,
+    GetRegionNamePipe,
+    GetCountryNamePipe
   ],
   imports: [
     BrowserModule,
