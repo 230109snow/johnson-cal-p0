@@ -1,11 +1,5 @@
 <h2>Search</h2>
 <form [formGroup]="form">
-  <label>Country: </label>
-  <select  id="countrySelect" (change)="searchByCountry($event.target)">
-    <option *ngFor="let country of countryList" [ngValue]="country">
-      {{country}}
-    </option>
-  </select>
   <label>Region: </label>
   <select id="regionSelect" (change) = "searchByRegion($event.target)">
     <option *ngFor="let region of regionList" [ngValue]="region">
@@ -13,10 +7,11 @@
     </option>
   </select>
 </form>
-<div class="results" (click)="navigateToDetail($event.target)">
-  <h3>Results</h3>
-  <div class="resultCard" *ngFor="let result of resultList" [id]="result.id">
-    <p>{{result.name}}</p>
-    <p>{{result.region | getRegionName}}, {{result.country | getCountryName}}</p>
-  </div>
+<div class="results card" (click)="navigateToDetail($event.target)">
+  <h3 class="card-header">Results</h3>
+  <ul class="list-group list-group-horizontal" 
+  *ngFor="let result of resultList" [id]="result.id">
+    <li class="list-group-item flex-fill">{{result.name}}</li>
+    <li class="list-group-item">{{result.region | getRegionName}}, {{result.country | getCountryName}}</li>
+  </ul>
 </div>

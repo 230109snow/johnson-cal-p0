@@ -17,7 +17,6 @@ export class RegionSearchComponent implements OnInit{
 
 
 
-  country : string = "";
   region : string = "";
   resortList : any = {};
   countryList : string[] = [];
@@ -25,25 +24,6 @@ export class RegionSearchComponent implements OnInit{
   resultList : any[] = [];
 
   form = new FormGroup({})
-
-  searchByCountry(target : any) {
-    let country = target.value;
-    if (country) {
-      this.resultList = [];
-      this.resortList.forEach((resort : any) => {
-        if(resort.country === country) {
-          let resultInfo = {
-            id : resort.slug,
-            name : resort.name,
-            region : resort.region,
-            country : resort.country
-          }
-          this.resultList.push(resultInfo)
-        }
-      })
-      console.log(this.resultList);
-    }
-  }
 
   searchByRegion(target : any) {
     let region = target.value;
