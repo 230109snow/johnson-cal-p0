@@ -1,5 +1,11 @@
-<input type="text" [(ngModel)]="id">
-<button (click)="getResortInfo()">Get Resort</button>
-<div>
-  <a routerLink="/regions">Search by Region/Country</a>
+<div class="jumbotron">
+  <h2>Find a Resort</h2>
+  <p>Enter a resort name below.</p>
+  <div class="input-group rounded">
+    <input type="search" class="form-control rounded" placeholder="Search"
+    [(ngModel)]="id" (search)="goToDetailPage(id)"
+    />
+  </div>
+  <hr class="my-4">
+  <a routerLink="/regions">Search by state or province.</a>
 </div>

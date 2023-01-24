@@ -44,6 +44,8 @@ export class ResortDetailComponent implements OnInit, OnDestroy{
   twitterUser : string = "";
   tweets : tweet[] = [];
 
+  
+
   addToFavorites(){
     let favArray = [];
     let favorites = localStorage.getItem('favorites') || "";

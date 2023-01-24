@@ -12,6 +12,10 @@ export class ResortSearchComponent {
 
   id : string = "";
 
+  goToDetailPage(id: string) {
+    this.router.navigate(['/resort', id]);
+  }
+
   getResortInfo() : void {
     console.log(this.id);
     this.router.navigate(['/resort', this.id]);

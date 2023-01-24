@@ -24,7 +24,7 @@ export class RegionSearchComponent implements OnInit{
   resultList : any[] = [];
 
   form = new FormGroup({})
-
+  
   searchByRegion(target : any) {
     let region = target.value;
     if (region) {
