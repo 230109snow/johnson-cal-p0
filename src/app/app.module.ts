@@ -12,6 +12,7 @@ import { RegionSearchComponent } from './region-search/region-search.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { GetRegionNamePipe } from './get-region-name.pipe';
 import { GetCountryNamePipe } from './get-country-name.pipe';
+import { FavoritesComponent } from './favorites/favorites.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { GetCountryNamePipe } from './get-country-name.pipe';
     RegionSearchComponent,
     NavbarComponent,
     GetRegionNamePipe,
-    GetCountryNamePipe
+    GetCountryNamePipe,
+    FavoritesComponent
   ],
   imports: [
     BrowserModule,

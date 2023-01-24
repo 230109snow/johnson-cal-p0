@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Router, ActivatedRoute } from '@angular/router';
 import { apiKey } from 'src/api-key';
 
+
 interface tweet {
   text: string;
   id_str: string;
@@ -22,7 +23,8 @@ interface lift {
 export class ResortDetailComponent implements OnInit, OnDestroy{
   constructor(
     private route : ActivatedRoute,
-    private http : HttpClient
+    private http : HttpClient,
+    private router : Router
   ) {}
   private sub : any;
 
@@ -42,10 +44,24 @@ export class ResortDetailComponent implements OnInit, OnDestroy{
   twitterUser : string = "";
   tweets : tweet[] = [];
 
+  addToFavorites(){
+    let favArray = [];
+    let favorites = localStorage.getItem('favorites') || "";
+    console.log('test',favorites);
+    if (favorites){
+      favArray = (JSON.parse(favorites));
+    }
+    if (!favArray.includes([this.resort_id, this.name])) {
+      favArray.push([this.resort_id, this.name]);
+      localStorage.setItem('favorites', JSON.stringify(favArray));
+    }
+    this.router.navigate(['/favorites'])
+  }
+
   ngOnInit() {
     this.sub = this.route.params.subscribe(params => {
       this.resort_id = params['id']; 
-      let url = 'assets/json/alta.json';
+      let url = 'assets/json/resort-info.json';
       // let url= `https://ski-resorts-and-conditions.p.rapidapi.com/v1/resort/${this.resort_id}`
       
       this.http.get(url, {
@@ -56,6 +72,7 @@ export class ResortDetailComponent implements OnInit, OnDestroy{
       }).subscribe((data : any) => {
         console.log(data);
 
+        this.resort_id = data.data.slug
         this.name = data.data.name;
         this.country = data.data.country;
         this.region = data.data.region;

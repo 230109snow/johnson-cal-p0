@@ -1,0 +1,12 @@
+<div class="card">
+  <h2 class="card-header">My Favorites</h2>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item" *ngFor = "let fav of favorites" >
+      <div (click)="goToDetailPage(fav[0])">
+        <p>{{fav[1]}}</p>
+      </div>
+      <button type="button" class="btn btn-outline-danger btn-sm" 
+      (click) = "removeFavorite(fav[0])">Remove</button>
+    </li>
+  </ul>
+</div>
