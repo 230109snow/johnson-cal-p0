@@ -1,11 +1,18 @@
 <div class="jumbotron">
-  <h2>Find a Resort</h2>
-  <p>Enter a resort name below.</p>
+  <h2>About Slope Finder</h2>
+  <p>Slope finder is a web application for skiers and snowboarders that provides real-time data so users can check lift statuses and snow conditons for ski resorts.</p>
+  <hr class="my-4">
+</div>
+<div class="jumbotron">
+  <h3>Find a Resort</h3>
+  <p>Enter a ski resort name below to get started, or 
+    <span>
+      <a routerLink="/regions">search by location.</a>
+    </span>
+  </p>
   <div class="input-group rounded">
     <input type="search" class="form-control rounded" placeholder="Search"
     [(ngModel)]="id" (search)="goToDetailPage(id)"
     />
-  </div>
-  <hr class="my-4">
-  <a routerLink="/regions">Search by state or province.</a>
+  </div>  
 </div>

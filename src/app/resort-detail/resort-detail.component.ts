@@ -35,25 +35,34 @@ export class ResortDetailComponent implements OnInit, OnDestroy{
   liftsOpen = 0;
   liftsTotal : number = 0;
   lifts : lift[] = [];
+  isFavorite = false;
   conditions = {
     base : 0,
     season : 0,
     dayTotal : 0,
-    weekTotal : 0
+    weekTotal : 0,
+    display: false
   };
   twitterUser : string = "";
   tweets : tweet[] = [];
-
-  
+  latitude : number = 0;
+  longitude : number = 0;
+  website : string = "";
 
   addToFavorites(){
+    let isFav = false;
     let favArray = [];
     let favorites = localStorage.getItem('favorites') || "";
-    console.log('test',favorites);
     if (favorites){
       favArray = (JSON.parse(favorites));
-    }
-    if (!favArray.includes([this.resort_id, this.name])) {
+    } 
+    for (let fav of favArray) {
+      if (fav[0] === this.resort_id) {
+        isFav = true
+      }
+    } if (isFav){
+      window.alert('This resort is already in your favorites!')
+    } else{
       favArray.push([this.resort_id, this.name]);
       localStorage.setItem('favorites', JSON.stringify(favArray));
     }
@@ -63,21 +72,21 @@ export class ResortDetailComponent implements OnInit, OnDestroy{
   ngOnInit() {
     this.sub = this.route.params.subscribe(params => {
       this.resort_id = params['id']; 
-      let url = 'assets/json/resort-info.json';
-      // let url= `https://ski-resorts-and-conditions.p.rapidapi.com/v1/resort/${this.resort_id}`
-      
+      let url= `https://ski-resorts-and-conditions.p.rapidapi.com/v1/resort/${this.resort_id}`
       this.http.get(url, {
-        // headers: {
-        //   'X-RapidAPI-Key': apiKey,
-        //   'X-RapidAPI-Host': 'ski-resorts-and-conditions.p.rapidapi.com'
-        // }
+        headers: {
+          'X-RapidAPI-Key': apiKey,
+          'X-RapidAPI-Host': 'ski-resorts-and-conditions.p.rapidapi.com'
+        }
       }).subscribe((data : any) => {
-        console.log(data);
-
-        this.resort_id = data.data.slug
+        this.website = data.data.href;
+        // Location
+        this.resort_id = data.data.slug;
         this.name = data.data.name;
         this.country = data.data.country;
         this.region = data.data.region;
+        this.latitude = data.data.location.latitude
+        this.longitude = data.data.location.longitude
         // Lifts
         this.liftsOpen = data.data.lifts.stats.open;
         this.liftsTotal = Object.keys(data.data.lifts.status).length;
@@ -96,6 +105,7 @@ export class ResortDetailComponent implements OnInit, OnDestroy{
         }        
         // Conditions
         if (data.data.conditions) {
+          this.conditions.display = true;
           this.conditions.base = data.data.conditions.base;
           this.conditions.season = data.data.conditions.season;
           this.conditions.dayTotal = data.data.conditions.twentyfour_hours;

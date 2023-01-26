@@ -7,7 +7,23 @@
   /* justify-content: space-between; */
   align-items: center;
 }
+
+#fav-img{
+  height: 1.2em;
+}
 #location{
   font: small;
   color:darkgray;
+}
+
+.btn img {
+  height: 10px;
+}
+.banner a {
+  text-decoration: none;
+  color: black;
+}
+
+.banner .btn {
+  margin-left: 1rem;
 }

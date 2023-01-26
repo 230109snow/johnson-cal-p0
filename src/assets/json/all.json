@@ -1,0 +1,890 @@
+[
+  {
+      "id": "49-degrees-north",
+      "name": "49 Degrees North",
+      "region": "WA",
+      "country": "US"
+  },
+  {
+      "id": "alpine-meadows",
+      "name": "Alpine Meadows",
+      "region": "CA",
+      "country": "US"
+  },
+  {
+      "id": "alta",
+      "name": "Alta",
+      "region": "UT",
+      "country": "US"
+  },
+  {
+      "id": "alyeska",
+      "name": "Alyeska",
+      "region": "AK",
+      "country": "US"
+  },
+  {
+      "id": "angel-fire",
+      "name": "Angel Fire",
+      "region": "NM",
+      "country": "US"
+  },
+  {
+      "id": "arapahoe-basin",
+      "name": "Arapaho Basin",
+      "region": "CO",
+      "country": "US"
+  },
+  {
+      "id": "aspen-highlands",
+      "name": "Aspen Highlands",
+      "region": "CO",
+      "country": "US"
+  },
+  {
+      "id": "aspen-mountain",
+      "name": "Aspen Mountain",
+      "region": "CO",
+      "country": "US"
+  },
+  {
+      "id": "attitash",
+      "name": "Attitash",
+      "region": "NH",
+      "country": "US"
+  },
+  {
+      "id": "beavercreek",
+      "name": "Beaver Creek",
+      "region": "CO",
+      "country": "US"
+  },
+  {
+      "id": "big-sky",
+      "name": "Big Sky",
+      "region": "MT",
+      "country": "US"
+  },
+  {
+      "id": "big-white",
+      "name": "Big White",
+      "region": "BC",
+      "country": "CA"
+  },
+  {
+      "id": "bluemountain",
+      "name": "Blue Mountain",
+      "region": "ON",
+      "country": "CA"
+  },
+  {
+      "id": "bolton-valley",
+      "name": "Bolton Valley",
+      "region": "VT",
+      "country": "US"
+  },
+  {
+      "id": "boreal",
+      "name": "Boreal",
+      "region": "CA",
+      "country": "US"
+  },
+  {
+      "id": "breck",
+      "name": "Breckenridge",
+      "region": "CO",
+      "country": "US"
+  },
+  {
+      "id": "brettonwoods",
+      "name": "Bretton Woods",
+      "region": "NH",
+      "country": "US"
+  },
+  {
+      "id": "brianhead",
+      "name": "Brian Head",
+      "region": "UT",
+      "country": "US"
+  },
+  {
+      "id": "bridger-bowl",
+      "name": "Bridger Bowl",
+      "region": "MT",
+      "country": "US"
+  },
+  {
+      "id": "brighton",
+      "name": "Brighton",
+      "region": "UT",
+      "country": "US"
+  },
+  {
+      "id": "bromley-mountain",
+      "name": "Bromley Mountain",
+      "region": "VT",
+      "country": "US"
+  },
+  {
+      "id": "burke-mountain",
+      "name": "Burke Mountain",
+      "region": "VT",
+      "country": "US"
+  },
+  {
+      "id": "buttermilk",
+      "name": "Buttermilk",
+      "region": "CO",
+      "country": "US"
+  },
+  {
+      "id": "caberfae-peaks",
+      "name": "Caberfae Peaks",
+      "region": "MI",
+      "country": "US"
+  },
+  {
+      "id": "camelback",
+      "name": "Camelback Mountain",
+      "region": "PA",
+      "country": "US"
+  },
+  {
+      "id": "canada-olympic-park",
+      "name": "Canada Olympic Park",
+      "region": "AB",
+      "country": "CA"
+  },
+  {
+      "id": "cannon",
+      "name": "Cannon",
+      "region": "NH",
+      "country": "US"
+  },
+  {
+      "id": "cataloochee",
+      "name": "Cataloochee",
+      "region": "NC",
+      "country": "US"
+  },
+  {
+      "id": "chinapeak",
+      "name": "China Peak",
+      "region": "CA",
+      "country": "US"
+  },
+  {
+      "id": "claviere",
+      "name": "Cesana Claviere",
+      "region": "TO",
+      "country": "IT"
+  },
+  {
+      "id": "copper",
+      "name": "Copper Mountain",
+      "region": "CO",
+      "country": "US"
+  },
+  {
+      "id": "coronetpeak",
+      "name": "Coronet Peak",
+      "region": "OTA",
+      "country": "NZ"
+  },
+  {
+      "id": "courchevel",
+      "name": "Courchevel - 3 Vallees",
+      "region": "ARA",
+      "country": "FR"
+  },
+  {
+      "id": "cranmore-mountain",
+      "name": "Cranmore",
+      "region": "NH",
+      "country": "US"
+  },
+  {
+      "id": "cransmontana",
+      "name": "Crans-Montana",
+      "region": "VS",
+      "country": "CH"
+  },
+  {
+      "id": "crested-butte",
+      "name": "Crested Butte",
+      "region": "CO",
+      "country": "US"
+  },
+  {
+      "id": "crystal-mountain",
+      "name": "Crystal Mountain",
+      "region": "WA",
+      "country": "US"
+  },
+  {
+      "id": "cypress-mountain",
+      "name": "Cypress Mountain",
+      "region": "BC",
+      "country": "CA"
+  },
+  {
+      "id": "deer-valley",
+      "name": "Deer Valley",
+      "region": "UT",
+      "country": "US"
+  },
+  {
+      "id": "devils-head",
+      "name": "Devil's Head",
+      "region": "WI",
+      "country": "US"
+  },
+  {
+      "id": "diamondpeak",
+      "name": "Diamond Peak",
+      "region": "NV",
+      "country": "US"
+  },
+  {
+      "id": "falls-creek",
+      "name": "Falls Creek",
+      "region": "VIC",
+      "country": "AU"
+  },
+  {
+      "id": "folgarida-marilleva",
+      "name": "Folgarida Marilleva",
+      "region": "TN",
+      "country": "IT"
+  },
+  {
+      "id": "gore-mountain",
+      "name": "Gore Mountain",
+      "region": "NY",
+      "country": "US"
+  },
+  {
+      "id": "grand-targhee",
+      "name": "Grand Targhee",
+      "region": "WY",
+      "country": "US"
+  },
+  {
+      "id": "grouse",
+      "name": "Grouse Mountain",
+      "region": "BC",
+      "country": "CA"
+  },
+  {
+      "id": "gunstock",
+      "name": "Gunstock",
+      "region": "NH",
+      "country": "US"
+  },
+  {
+      "id": "heavenly",
+      "name": "Heavenly",
+      "region": "CA",
+      "country": "US"
+  },
+  {
+      "id": "hochfuegen",
+      "name": "Hochfügen",
+      "region": "7",
+      "country": "AT"
+  },
+  {
+      "id": "homewood",
+      "name": "Homewood",
+      "region": "CA",
+      "country": "US"
+  },
+  {
+      "id": "hoodoo",
+      "name": "Hoodoo",
+      "region": "OR",
+      "country": "US"
+  },
+  {
+      "id": "hunter",
+      "name": "Hunter Mountain",
+      "region": "NY",
+      "country": "US"
+  },
+  {
+      "id": "ischgl-silvretta-arena",
+      "name": "Ischgl - Silvretta",
+      "region": "7",
+      "country": "AT"
+  },
+  {
+      "id": "jackson-hole",
+      "name": "Jackson Hole",
+      "region": "WY",
+      "country": "US"
+  },
+  {
+      "id": "jay-peak",
+      "name": "Jay Peak",
+      "region": "VT",
+      "country": "US"
+  },
+  {
+      "id": "jiminypeak",
+      "name": "Jiminy Peak",
+      "region": "MA",
+      "country": "US"
+  },
+  {
+      "id": "june-mountain",
+      "name": "June Mountain",
+      "region": "CA",
+      "country": "US"
+  },
+  {
+      "id": "keystone",
+      "name": "Keystone",
+      "region": "CO",
+      "country": "US"
+  },
+  {
+      "id": "killington",
+      "name": "Killington",
+      "region": "VT",
+      "country": "US"
+  },
+  {
+      "id": "king-pine",
+      "name": "King Pine",
+      "region": "NH",
+      "country": "US"
+  },
+  {
+      "id": "kirkwood",
+      "name": "Kirkwood",
+      "region": "CA",
+      "country": "US"
+  },
+  {
+      "id": "kitzbuehel",
+      "name": "Kitzbühel",
+      "region": "7",
+      "country": "AT"
+  },
+  {
+      "id": "laplagne",
+      "name": "La Plagne",
+      "region": "V",
+      "country": "FR"
+  },
+  {
+      "id": "larosiere",
+      "name": "La Rosière",
+      "region": "ARA",
+      "country": "FR"
+  },
+  {
+      "id": "lesarcs",
+      "name": "Les Arcs",
+      "region": "ARA",
+      "country": "FR"
+  },
+  {
+      "id": "lesmenuires",
+      "name": "Les Menuires",
+      "region": "ARA",
+      "country": "FR"
+  },
+  {
+      "id": "loon",
+      "name": "Loon Mountain",
+      "region": "NH",
+      "country": "US"
+  },
+  {
+      "id": "loveland",
+      "name": "Loveland",
+      "region": "CO",
+      "country": "US"
+  },
+  {
+      "id": "mad-river-glen",
+      "name": "Mad River Glen",
+      "region": "VT",
+      "country": "US"
+  },
+  {
+      "id": "madonna-di-campiglio",
+      "name": "Madonna di Campiglio",
+      "region": "32",
+      "country": "IT"
+  },
+  {
+      "id": "mammoth-lakes",
+      "name": "Mammoth Mountain",
+      "region": "CA",
+      "country": "US"
+  },
+  {
+      "id": "manning-park",
+      "name": "Manning Park",
+      "region": "BC",
+      "country": "CA"
+  },
+  {
+      "id": "megeve",
+      "name": "Megève",
+      "region": "ARA",
+      "country": "FR"
+  },
+  {
+      "id": "meribel",
+      "name": "Meribel",
+      "region": "ARA",
+      "country": "FR"
+  },
+  {
+      "id": "monarch",
+      "name": "Monarch Mountain",
+      "region": "CO",
+      "country": "US"
+  },
+  {
+      "id": "montegenevre",
+      "name": "Montgenevre",
+      "region": "PAC",
+      "country": "FR"
+  },
+  {
+      "id": "morzine",
+      "name": "Morzine",
+      "region": "ARA",
+      "country": "FR"
+  },
+  {
+      "id": "mount-sunapee",
+      "name": "Mount Sunapee",
+      "region": "NH",
+      "country": "US"
+  },
+  {
+      "id": "mountsnow",
+      "name": "Mount Snow",
+      "region": "VT",
+      "country": "US"
+  },
+  {
+      "id": "mt-buller",
+      "name": "Mount Buller",
+      "region": "VIC",
+      "country": "AU"
+  },
+  {
+      "id": "mt-hotham",
+      "name": "Mount Hotham",
+      "region": "VIC",
+      "country": "AU"
+  },
+  {
+      "id": "mt-seymour",
+      "name": "Mount Seymour",
+      "region": "BC",
+      "country": "CA"
+  },
+  {
+      "id": "mt-spokane",
+      "name": "Mt Spokane",
+      "region": "WA",
+      "country": "US"
+  },
+  {
+      "id": "mtbachelor",
+      "name": "Mount Bachelor",
+      "region": "OR",
+      "country": "US"
+  },
+  {
+      "id": "mtbrighton",
+      "name": "Mt Brighton",
+      "region": "MI",
+      "country": "US"
+  },
+  {
+      "id": "mthigh",
+      "name": "Mountain High",
+      "region": "CA",
+      "country": "US"
+  },
+  {
+      "id": "mthood",
+      "name": "Mount Hood",
+      "region": "OR",
+      "country": "US"
+  },
+  {
+      "id": "mtrose",
+      "name": "Mount Rose",
+      "region": "NV",
+      "country": "US"
+  },
+  {
+      "id": "niseko",
+      "name": "Niseko",
+      "region": "01",
+      "country": "JP"
+  },
+  {
+      "id": "northstar",
+      "name": "Northstar",
+      "region": "CA",
+      "country": "US"
+  },
+  {
+      "id": "okemo",
+      "name": "Okemo",
+      "region": "VT",
+      "country": "US"
+  },
+  {
+      "id": "owlshead",
+      "name": "Owl's Head",
+      "region": "QC",
+      "country": "CA"
+  },
+  {
+      "id": "palisades",
+      "name": "Palisades Tahoe",
+      "region": "CA",
+      "country": "US"
+  },
+  {
+      "id": "parkcity",
+      "name": "Park City",
+      "region": "UT",
+      "country": "US"
+  },
+  {
+      "id": "pats-peak",
+      "name": "Pats Peak",
+      "region": "NH",
+      "country": "US"
+  },
+  {
+      "id": "perisher",
+      "name": "Perisher",
+      "region": "NSW",
+      "country": "AU"
+  },
+  {
+      "id": "pico",
+      "name": "Pico Mountain",
+      "region": "VT",
+      "country": "US"
+  },
+  {
+      "id": "pinzolo",
+      "name": "Pinzolo",
+      "region": "32",
+      "country": "IT"
+  },
+  {
+      "id": "pontedilegno-tonale",
+      "name": "Ponte di Legno - Tonale",
+      "region": "BS",
+      "country": "IT"
+  },
+  {
+      "id": "ragged-mountain",
+      "name": "Ragged Mountain",
+      "region": "NH",
+      "country": "US"
+  },
+  {
+      "id": "red-lodge-mountain",
+      "name": "Red Lodge Mountain",
+      "region": "MT",
+      "country": "US"
+  },
+  {
+      "id": "red-mountain",
+      "name": "Red Mountain",
+      "region": "BC",
+      "country": "CA"
+  },
+  {
+      "id": "saddleback",
+      "name": "Saddleback",
+      "region": "ME",
+      "country": "US"
+  },
+  {
+      "id": "sansicario",
+      "name": "Cesana San Sicario",
+      "region": "21",
+      "country": "IT"
+  },
+  {
+      "id": "sasquatch-mountain",
+      "name": "Sasquatch Mountain",
+      "region": "BC",
+      "country": "CA"
+  },
+  {
+      "id": "sauze",
+      "name": "Sauze d'Oulx",
+      "region": "21",
+      "country": "IT"
+  },
+  {
+      "id": "schweitzer",
+      "name": "Schweitzer",
+      "region": "ID",
+      "country": "US"
+  },
+  {
+      "id": "sestriere",
+      "name": "Sestriere",
+      "region": "21",
+      "country": "IT"
+  },
+  {
+      "id": "shawnee-mountain",
+      "name": "Shawnee Mountain",
+      "region": "PA",
+      "country": "US"
+  },
+  {
+      "id": "shawnee-peak",
+      "name": "Shawnee Peak",
+      "region": "ME",
+      "country": "US"
+  },
+  {
+      "id": "sierra",
+      "name": "Sierra at Tahoe",
+      "region": "CA",
+      "country": "US"
+  },
+  {
+      "id": "silver-star",
+      "name": "Silver Star",
+      "region": "BC",
+      "country": "CA"
+  },
+  {
+      "id": "smuggs",
+      "name": "Smugglers' Notch",
+      "region": "VT",
+      "country": "US"
+  },
+  {
+      "id": "snow-valley",
+      "name": "Snow Valley",
+      "region": "CA",
+      "country": "US"
+  },
+  {
+      "id": "snowbasin",
+      "name": "Snowbasin",
+      "region": "UT",
+      "country": "US"
+  },
+  {
+      "id": "snowbird",
+      "name": "Snowbird",
+      "region": "UT",
+      "country": "US"
+  },
+  {
+      "id": "snowmass",
+      "name": "Snowmass",
+      "region": "CO",
+      "country": "US"
+  },
+  {
+      "id": "snowshoe",
+      "name": "Snowshoe Mountain",
+      "region": "WV",
+      "country": "US"
+  },
+  {
+      "id": "soelden",
+      "name": "Sölden",
+      "region": "7",
+      "country": "AT"
+  },
+  {
+      "id": "solitude",
+      "name": "Solitude",
+      "region": "UT",
+      "country": "US"
+  },
+  {
+      "id": "st-anton-am-arlberg",
+      "name": "St. Anton Am Arlberg",
+      "region": "7",
+      "country": "AT"
+  },
+  {
+      "id": "steamboat",
+      "name": "Steamboat",
+      "region": "CO",
+      "country": "US"
+  },
+  {
+      "id": "stevens",
+      "name": "Stevens Pass",
+      "region": "WA",
+      "country": "US"
+  },
+  {
+      "id": "stowe",
+      "name": "Stowe",
+      "region": "VT",
+      "country": "US"
+  },
+  {
+      "id": "stratton",
+      "name": "Stratton",
+      "region": "VT",
+      "country": "US"
+  },
+  {
+      "id": "sugarbowl",
+      "name": "Sugar Bowl",
+      "region": "CA",
+      "country": "US"
+  },
+  {
+      "id": "sugarbush",
+      "name": "Sugarbush",
+      "region": "VT",
+      "country": "US"
+  },
+  {
+      "id": "sugarloaf",
+      "name": "Sugarloaf",
+      "region": "ME",
+      "country": "US"
+  },
+  {
+      "id": "sun-peaks",
+      "name": "Sun Peaks",
+      "region": "BC",
+      "country": "CA"
+  },
+  {
+      "id": "sunday-river",
+      "name": "Sunday River",
+      "region": "ME",
+      "country": "US"
+  },
+  {
+      "id": "sunshine-village",
+      "name": "Sunshine Village",
+      "region": "AB",
+      "country": "CA"
+  },
+  {
+      "id": "sunvalley",
+      "name": "Sun Valley",
+      "region": "ID",
+      "country": "US"
+  },
+  {
+      "id": "tahoe-donner",
+      "name": "Tahoe Donner",
+      "region": "CA",
+      "country": "US"
+  },
+  {
+      "id": "taos",
+      "name": "Taos Ski Valley",
+      "region": "NM",
+      "country": "US"
+  },
+  {
+      "id": "telluride",
+      "name": "Telluride",
+      "region": "CO",
+      "country": "US"
+  },
+  {
+      "id": "thredbo",
+      "name": "Thredbo",
+      "region": "NSW",
+      "country": "AU"
+  },
+  {
+      "id": "timberline-lodge",
+      "name": "Timberline Lodge",
+      "region": "OR",
+      "country": "US"
+  },
+  {
+      "id": "tremblant",
+      "name": "Mont Tremblant",
+      "region": "QB",
+      "country": "CA"
+  },
+  {
+      "id": "vail",
+      "name": "Vail",
+      "region": "CO",
+      "country": "US"
+  },
+  {
+      "id": "val-gardena",
+      "name": "Val Gardena",
+      "region": "32",
+      "country": "IT"
+  },
+  {
+      "id": "verbier",
+      "name": "Verbier",
+      "region": "VS",
+      "country": "CH"
+  },
+  {
+      "id": "waterville",
+      "name": "Waterville Valley",
+      "region": "NH",
+      "country": "US"
+  },
+  {
+      "id": "whistler-blackcomb",
+      "name": "Whistler Blackcomb",
+      "region": "BC",
+      "country": "CA"
+  },
+  {
+      "id": "whiteface",
+      "name": "Whiteface",
+      "region": "NY",
+      "country": "US"
+  },
+  {
+      "id": "wildcat",
+      "name": "Wildcat",
+      "region": "NH",
+      "country": "US"
+  },
+  {
+      "id": "windham",
+      "name": "Windham Mountain",
+      "region": "NY",
+      "country": "US"
+  },
+  {
+      "id": "winter-park",
+      "name": "Winter Park",
+      "region": "CO",
+      "country": "US"
+  },
+  {
+      "id": "winterplace",
+      "name": "Winterplace",
+      "region": "WV",
+      "country": "US"
+  }
+]

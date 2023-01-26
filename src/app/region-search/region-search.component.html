@@ -1,17 +1,39 @@
-<h2>Search</h2>
-<form [formGroup]="form">
-  <label>Region: </label>
-  <select id="regionSelect" (change) = "searchByRegion($event.target)">
-    <option *ngFor="let region of regionList" [ngValue]="region">
-      {{region}}
-    </option>
-  </select>
-</form>
-<div class="results card" (click)="navigateToDetail($event.target)">
+<h2>Search For Resorts</h2>
+<div class="form-wrapper">
+  <form #searchForm="ngForm" (ngSubmit)="search(searchForm)">
+    <div class="form-group">
+      <label for="country">Country</label>
+      <select class="form-control" id="country" name="country" 
+      [(ngModel)]="countrySelected" [disabled]="cDisabled" >
+        <option value="" disabled selected>Select a country</option>
+        <option *ngFor="let country of countries" [value]="country">
+          {{ country | getCountryName}}
+        </option>
+      </select>
+    </div>
+    <div *ngIf="!rDisabled" class="form-group">
+      <label for="region">State/Province</label>
+      <select class="form-control" name="region" id="region"
+      [(ngModel)]="regionSelected">
+        <option value="" disabled selected>Select a region</option>
+        <option *ngFor="let region of regions" [value]="region">
+          {{ region | getRegionName}}
+        </option>
+      </select>    
+    </div>
+    <div class="btn-wrapper">
+      <button class="btn btn-primary" type="submit">Search</button>
+      <button class="btn btn-danger" (click)="clear()">Clear</button>
+    </div>
+  </form>
+</div>
+
+<div *ngIf="results.length>0" class="results card" >
   <h3 class="card-header">Results</h3>
   <ul class="list-group list-group-horizontal" 
-  *ngFor="let result of resultList" [id]="result.id">
+  *ngFor="let result of results" [id]="result.id" (click)="navigateToDetail(result.id)">
     <li class="list-group-item flex-fill">{{result.name}}</li>
-    <li class="list-group-item">{{result.region | getRegionName}}, {{result.country | getCountryName}}</li>
+    <li class="list-group-item" *ngIf="!rDisabled">{{result.region | getRegionName}}</li>
+    <li class="list-group-item">{{result.country | getCountryName}}</li>
   </ul>
 </div>

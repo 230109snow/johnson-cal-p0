@@ -1,11 +1,15 @@
 header {
   padding: 0 10% 0 10%;
   height: 10vh;
+  background-color: #011627;
+  color: white;
+  margin-bottom: 1.2em;
 }
 .wrapper {
   width: 80%;
   margin-left: 10%;
 }
 #icon {
-  height:80%
+  height:80%;
+  color: white;
 }
